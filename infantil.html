@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_menu">
+            <div class="title">Loja Virtual</div>
+            <nav>
+                <a class="nav-link" aria-current="page" id="all" href="./index.html">Todos os produtos</a>
+                <a class="nav-link" aria-current="page" id="feminino" href="./feminino.html">Feminino</a>
+                <a class="nav-link" aria-current="page" id="infantil" href="#">Infantil</a>
+                <a class="nav-link" aria-current="page" id="masculino" href="./masculino.html">Masculino</a>
+                <button class="button_cart">Carrinho</button>
+            </nav>
+        </div>
+        <form class="header_search">
+            <input class="search" type="text" name="search" id="search" placeholder="Pesquisar">
+            <button class="button_search">Pesquisar</button>
+        </form>
+    </header>
+    <main>
+        <section class="section_products"></section>
+  
+        <!-- MODAL CARRINHO -->
+        <div class="modal">
+          <button class="close_modal" id="close_modal">x</button>
+          <div class="modalContainer" id="modal">
+              
+              <div class="modalContent">
+                <!-- Conteúdo do Modal -->
+                <h2 class="title_cart">Carrinho de compras</h2>
+                <section class="section_products_cart"></section>
+              </div>
+            </div>
+        </div>
+      </main>
+    <footer></footer>
+    
+</body>
+</html>
